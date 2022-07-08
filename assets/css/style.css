@@ -16,3 +16,24 @@ body {
     border-bottom: #3e4347 1px solid;
     padding: 1em;
 }
+.gallery {
+    display: flex;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+input {
+    margin-top: 1em;
+}
+#btn-sticker {
+    background-color: #778088;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+}
+#btn-sticker:active {
+    background-color: #d1d8df;
+    color:#3e4347;
+}
