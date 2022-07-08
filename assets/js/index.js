@@ -14,6 +14,7 @@ img.addEventListener('click', (e) => {
         img.removeAttribute('style')
     }
 });
+
 /* PARTE II: LLEVAR STICKERS */
 
 let alertsticker = document.getElementById('alert-stickers');
@@ -29,3 +30,24 @@ btnsticker.addEventListener('click', (a) => {
         alertsticker.innerHTML = 'Aun no llevas stickers, por favor elige una cantidad.'
     } else{alertsticker.innerHTML = 'Llevas demasiados, recuerda que solo puedes llevar 10 stickers en total.'};
 });
+
+/* PARTE III: ADIVINAR PASSWORD.
+Nota: Recordar que en el desafio se pide que salga un parrafo que diga "password 1 correcto"
+ o "password 2 correcto" que son 911 y 714 respectivamente */
+
+ let resultpw = document.getElementById("resultpw")
+ let btnpw = document.getElementById("btn-pw")
+ btnpw.addEventListener("click",(d) => {
+     let firstDigit = document.getElementById("first-digit").value;
+     let secondDigit = document.getElementById("second-digit").value;
+     let thirdDigit = document.getElementById("third-digit").value;
+     let concatpw = firstDigit + secondDigit + thirdDigit;
+     let pass = Number (concatpw);
+     if (pass == 911) {
+         resultpw.innerHTML = 'Password 1 correcto'
+     } else if (pass == 714) {
+         resultpw.innerHTML = 'Password 2 correcto'
+     } else {
+         resultpw.innerHTML = 'Password incorrecto. Intente nuevamente.'
+     };
+ });

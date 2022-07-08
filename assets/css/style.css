@@ -37,3 +37,16 @@ input {
     background-color: #d1d8df;
     color:#3e4347;
 }
+.password {
+    margin-bottom: 1em;
+}
+#btn-pw {
+    background-color: #778088;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+}
+#btn-pw:active {
+    background-color: #d1d8df;
+    color:#3e4347;
+}
